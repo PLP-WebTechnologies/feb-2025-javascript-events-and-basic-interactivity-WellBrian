@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lion King</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div id="logo">Lion King</div>
+        </div>
+    </header>
+    
+    <!-- HTML -->
+    <div class="auth-buttons">
+        <button onclick="showAuthModal('signup')">Signup</button>
+        <button onclick="showAuthModal('login')">Login</button>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="auth-modal">
+        <div class="auth-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Login</h2>
+            <form id="authForm">
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div id="signupFields" style="display: none;">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <button type="submit" id="submitBtn" class="auth-submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <div class="container">
+            <h1>Home of the Lion King</h1>
+            <p>This is where you get to see the Lion King and its sanctuary</p>
+        </div>
+    </section>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="./images/image-1.jpeg" style="width:100%">
+        <div class="text">Focus</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="./images/image-10.jpeg" style="width:100%">
+        <div class="text">Tired</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="./images/image-2.jpeg" style="width:100%">
+        <div class="text">Ready</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"> 4/ 5</div>
+        <img src="./images/image-3.jpeg" style="width:100%">
+        <div class="text">Get me</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="./images/image-6.jpeg" style="width:100%">
+        <div class="text">Tired</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Lion King Sanctuary. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
